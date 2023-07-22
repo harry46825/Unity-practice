@@ -1891,7 +1891,7 @@ MonoBehaviour:
   CeilingDetect: {fileID: 4825914835293195041}
   groundMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   ceilingMask:
     serializedVersion: 2
     m_Bits: 4294967295

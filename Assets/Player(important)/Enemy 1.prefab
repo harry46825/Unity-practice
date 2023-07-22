@@ -13,6 +13,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4506708575234082553, guid: c173f85b64cae754f85bbc463873e181,
+        type: 3}
+      propertyPath: whatIsGround.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506708575234082553, guid: c173f85b64cae754f85bbc463873e181,
+        type: 3}
+      propertyPath: whatIsPlayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5943762187049825138, guid: c173f85b64cae754f85bbc463873e181,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
