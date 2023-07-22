@@ -6,6 +6,7 @@ public class CollisionDetect : MonoBehaviour
 {
     // Start is called before the first frame update
     float Health;
+    public GameObject explosion;
 
     void Start()
     {
@@ -14,11 +15,13 @@ public class CollisionDetect : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo) 
     {
-        Destroy(gameObject);
-
-        if(collisionInfo.collider.tag == "Player")
-        {
+        if(collisionInfo.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {   
+            Instantiate(explosion, collisionInfo.collider.transform.position , collisionInfo.collider.transform.rotation);
             Health -= 2;
+            
         }
+
+        Destroy(gameObject);
     }
 }
