@@ -115,7 +115,9 @@ public class EnemyAI : MonoBehaviour
         agent.SetDestination(transform.position);
         walkPointSet = false;
 
-        transform.LookAt(player);
+        Vector3 PlayerPosition;
+        PlayerPosition = new Vector3(player.position.x, 0, player.position.z);
+        transform.LookAt(PlayerPosition);
 
         if (!alreadyAttacked)
         {
