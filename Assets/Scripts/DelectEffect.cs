@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class DelectEffect : MonoBehaviour
 {
-    ParticleSystem particleSystem;
+    ParticleSystem ParticleSystem;
 
     void Start()
     {
-        particleSystem = GetComponent<ParticleSystem>();
+        ParticleSystem = GetComponent<ParticleSystem>();
     }
 
     void Update()
     {
-        if (!particleSystem.isPlaying)
+        if (!ParticleSystem.isPlaying)
         {
             Destroy(gameObject);
         }
